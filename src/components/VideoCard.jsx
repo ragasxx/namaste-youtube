@@ -1,7 +1,6 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  console.log("info :  ", info);
   const { snippet, statistics } = info;
   const { channelTitle, title, thumbnails } = snippet;
 
@@ -16,12 +15,12 @@ const VideoCard = ({ info }) => {
           {channelTitle}
         </h3>
       </div>
-      <div class="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
-        <span class="mr-1 p-1 px-2 font-bold">{statistics.likeCount}</span>
-        <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">
+      <div className="info-box text-xs flex p-1 font-semibold text-gray-500 bg-gray-300">
+        <span className="mr-1 p-1 px-2 font-bold">{statistics.likeCount}</span>
+        <span className="mr-1 p-1 px-2 font-bold border-l border-gray-400">
           {statistics.commentCount}
         </span>
-        <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">
+        <span className="mr-1 p-1 px-2 font-bold border-l border-gray-400">
           {statistics.viewCount}
         </span>
       </div>

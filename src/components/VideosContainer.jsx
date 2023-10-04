@@ -14,7 +14,6 @@ const VideosContainer = () => {
   const getVideos = async () => {
     const data = await fetch(YOUTUBE_VIDEOS_API);
     const json = await data.json();
-    console.log(json.items);
     setVideos(json.items);
   };
   return videos.length === 0 ? (
@@ -22,9 +21,9 @@ const VideosContainer = () => {
   ) : (
     <div className="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
       {videos.map((video) => (
-        <Link to={`/watch?v=${video.id}`}>
+        <Link key={video.id} to={`/watch?v=${video.id}`}>
           {" "}
-          <VideoCard key={video.id} info={video} />
+          <VideoCard info={video} />
         </Link>
       ))}
     </div>
