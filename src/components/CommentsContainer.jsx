@@ -37,8 +37,8 @@ const commentsData = [
 ];
 
 const Commentslist = ({ commentsData }) => {
-  return commentsData.map((comment) => (
-    <div>
+  return commentsData.map((comment, index) => (
+    <div key={index}>
       <Comment data={comment} />
       <div className="pl-5 border border-l-black ml-5">
         <Commentslist commentsData={comment.replies} />
