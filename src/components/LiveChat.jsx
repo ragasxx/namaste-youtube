@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ChatMessage from "./ChatMessage";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "../utils/chatSlice";
+import { generate, makeid } from "../utils/helper";
 
 const LiveChat = () => {
   const [liveMessage, setLiveMessage] = useState("");
@@ -18,8 +19,8 @@ const LiveChat = () => {
 
       dispatch(
         addMessage({
-          name: "Sagar Bhatia",
-          message: "hello there",
+          name: generate(),
+          message: makeid(20),
         })
       );
     }, 1500);

@@ -2,34 +2,34 @@ import React from "react";
 
 const commentsData = [
   {
-    name: "sagar",
-    text: "hello ji",
+    name: "sid",
+    text: "Wtsupp",
     replies: [
       {
-        name: "aman",
-        text: "theek h ji",
+        name: "ajay",
+        text: "all good",
         replies: [
           {
-            name: "pawan",
-            text: "or aman kya haal",
+            name: "peejay",
+            text: "damn",
             replies: [],
           },
         ],
       },
       {
-        name: "isha",
-        text: "bdiaaaaa hu sagar",
+        name: "lisa",
+        text: "happy evening",
         replies: [],
       },
     ],
   },
   {
-    name: "deepak",
-    text: "kya hal h bhaiyo ke",
+    name: "denice",
+    text: "all good",
     replies: [
       {
-        name: "sagar",
-        text: "bdia bhaia",
+        name: "sans",
+        text: "yoo",
         replies: [],
       },
     ],
